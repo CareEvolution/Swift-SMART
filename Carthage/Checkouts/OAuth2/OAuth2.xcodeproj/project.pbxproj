@@ -17,14 +17,6 @@
 		EE24862A1AC85DD4002B31AF /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2486291AC85DD4002B31AF /* OAuth2WebViewController.swift */; };
 		EE2983711D40B83600933CDD /* OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29836F1D40B83600933CDD /* OAuth2.swift */; };
 		EE2983761D40BE7600933CDD /* OAuth2AuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2983741D40BE7600933CDD /* OAuth2AuthorizerUI.swift */; };
-		EE4EBD871D7FF38200E6A9CA /* OAuth2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD7E1D7FF38200E6A9CA /* OAuth2Tests.swift */; };
-		EE4EBD881D7FF38200E6A9CA /* OAuth2AuthRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD7F1D7FF38200E6A9CA /* OAuth2AuthRequestTests.swift */; };
-		EE4EBD891D7FF38200E6A9CA /* OAuth2ClientCredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD811D7FF38200E6A9CA /* OAuth2ClientCredentialsTests.swift */; };
-		EE4EBD8A1D7FF38200E6A9CA /* OAuth2CodeGrantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD821D7FF38200E6A9CA /* OAuth2CodeGrantTests.swift */; };
-		EE4EBD8B1D7FF38200E6A9CA /* OAuth2DynRegTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD831D7FF38200E6A9CA /* OAuth2DynRegTests.swift */; };
-		EE4EBD8C1D7FF38200E6A9CA /* OAuth2ImplicitGrantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD841D7FF38200E6A9CA /* OAuth2ImplicitGrantTests.swift */; };
-		EE4EBD8D1D7FF38200E6A9CA /* OAuth2PasswordGrantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD851D7FF38200E6A9CA /* OAuth2PasswordGrantTests.swift */; };
-		EE4EBD8E1D7FF38200E6A9CA /* OAuth2RefreshTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EBD861D7FF38200E6A9CA /* OAuth2RefreshTokenTests.swift */; };
 		EE507A391B1E15E000AE02E9 /* OAuth2DynReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507A371B1E15E000AE02E9 /* OAuth2DynReg.swift */; };
 		EE5F4F871B19114D00DB38B3 /* OAuth2ClientCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5F4F851B19114D00DB38B3 /* OAuth2ClientCredentials.swift */; };
 		EE79F6551BFA93D900746243 /* OAuth2AuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79F6531BFA93D900746243 /* OAuth2AuthConfig.swift */; };
@@ -42,7 +34,6 @@
 		EEACE1E01A7E8FC5009BF3A7 /* OAuth2CodeGrantFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACE1DE1A7E8FC1009BF3A7 /* OAuth2CodeGrantFacebook.swift */; };
 		EEAEF10C1CDBCF28001A1C6F /* OAuth2Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEF10A1CDBCF28001A1C6F /* OAuth2Logger.swift */; };
 		EEB9A97D1D86C34E0022EF66 /* OAuth2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A97B1D86C34E0022EF66 /* OAuth2Response.swift */; };
-		EEB9A9801D86CD4A0022EF66 /* OAuth2DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A97F1D86CD4A0022EF66 /* OAuth2DataLoaderTests.swift */; };
 		EEB9A9841D86D36A0022EF66 /* OAuth2RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A9821D86D36A0022EF66 /* OAuth2RequestPerformer.swift */; };
 		EEC49F321C9BF22400989A18 /* OAuth2AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC49F301C9BF22400989A18 /* OAuth2AuthRequest.swift */; };
 		EEC6D57D1C2837EA00FA9B1C /* OAuth2CodeGrantLinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6D57B1C2837EA00FA9B1C /* OAuth2CodeGrantLinkedIn.swift */; };
@@ -108,7 +99,6 @@
 		EEDB8640193FAB9200C4EEA1 /* OAuth2Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OAuth2Base.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EEDB864B19421DAD00C4EEA1 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EEE2098B1942778300736F1A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEE209A219427DFE00736F1A /* OAuth2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE209A519427DFE00736F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEF47D2A1B1E3FDD0057D838 /* OAuth2Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OAuth2Requestable.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EEFD23501C9ED9E400727DCF /* OAuth2ClientCredentialsReddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2ClientCredentialsReddit.swift; sourceTree = "<group>"; };
@@ -120,13 +110,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D2B961214AD16900878C96 /* Keychain.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEE2099F19427DFE00736F1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				EEDB8624193FAAE500C4EEA1 /* OAuth2.framework */,
-				EEE209A219427DFE00736F1A /* OAuth2Tests.xctest */,
 			);
 			name = Products;
 			path = ..;
@@ -356,23 +338,6 @@
 			productReference = EEDB8624193FAAE500C4EEA1 /* OAuth2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EEE209A119427DFE00736F1A /* OAuth2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EEE209AB19427DFE00736F1A /* Build configuration list for PBXNativeTarget "OAuth2Tests" */;
-			buildPhases = (
-				EEE2099E19427DFE00736F1A /* Sources */,
-				EEE2099F19427DFE00736F1A /* Frameworks */,
-				EEE209A019427DFE00736F1A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OAuth2Tests;
-			productName = "OAuth2 Tests";
-			productReference = EEE209A219427DFE00736F1A /* OAuth2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -387,11 +352,6 @@
 					EEDB8623193FAAE500C4EEA1 = {
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 1000;
-					};
-					EEE209A119427DFE00736F1A = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1000;
-						TestTargetID = EEE209461942772800736F1A;
 					};
 				};
 			};
@@ -409,20 +369,12 @@
 			projectRoot = "";
 			targets = (
 				EEDB8623193FAAE500C4EEA1 /* OAuth2iOS */,
-				EEE209A119427DFE00736F1A /* OAuth2Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EEDB8622193FAAE500C4EEA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEE209A019427DFE00736F1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,22 +420,6 @@
 				EE79F6581BFA945C00746243 /* OAuth2ClientConfig.swift in Sources */,
 				EE79F65B1BFAA36900746243 /* OAuth2Error.swift in Sources */,
 				CCCE40D6B4EAD9BF05C92ACE /* OAuth2CustomAuthorizer+iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEE2099E19427DFE00736F1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE4EBD8D1D7FF38200E6A9CA /* OAuth2PasswordGrantTests.swift in Sources */,
-				EE4EBD881D7FF38200E6A9CA /* OAuth2AuthRequestTests.swift in Sources */,
-				EE4EBD891D7FF38200E6A9CA /* OAuth2ClientCredentialsTests.swift in Sources */,
-				EE4EBD8B1D7FF38200E6A9CA /* OAuth2DynRegTests.swift in Sources */,
-				EE4EBD8A1D7FF38200E6A9CA /* OAuth2CodeGrantTests.swift in Sources */,
-				EEB9A9801D86CD4A0022EF66 /* OAuth2DataLoaderTests.swift in Sources */,
-				EE4EBD8C1D7FF38200E6A9CA /* OAuth2ImplicitGrantTests.swift in Sources */,
-				EE4EBD8E1D7FF38200E6A9CA /* OAuth2RefreshTokenTests.swift in Sources */,
-				EE4EBD871D7FF38200E6A9CA /* OAuth2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,48 +592,6 @@
 			};
 			name = Release;
 		};
-		EEE209AC19427DFE00736F1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				OTHER_SWIFT_FLAGS = "-DNO_MODULE_IMPORT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.p2.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		EEE209AD19427DFE00736F1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				OTHER_SWIFT_FLAGS = "-DNO_MODULE_IMPORT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.p2.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -715,15 +609,6 @@
 			buildConfigurations = (
 				EEDB863B193FAAE500C4EEA1 /* Debug */,
 				EEDB863C193FAAE500C4EEA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EEE209AB19427DFE00736F1A /* Build configuration list for PBXNativeTarget "OAuth2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EEE209AC19427DFE00736F1A /* Debug */,
-				EEE209AD19427DFE00736F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
