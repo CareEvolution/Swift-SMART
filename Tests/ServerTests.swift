@@ -10,7 +10,7 @@ import XCTest
 
 @testable
 import SMART
-
+import SwiftFHIR
 
 class ServerTests: XCTestCase {
 	
@@ -26,8 +26,8 @@ class ServerTests: XCTestCase {
 		XCTAssertNotNil(meta, "Should parse `metadata`")
 		let cabability = try? CapabilityStatement(json: meta)
 		
-		server.cabability = cabability
-		XCTAssertNotNil(server.cabability, "Should store all metadata")
+        server.capability = cabability
+        XCTAssertNotNil(server.capability, "Should store all metadata")
     }
 	
 	func testMetadataFailing() {

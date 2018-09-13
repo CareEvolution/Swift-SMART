@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import SwiftFHIR
+import OAuth2
 
 /**
 Representing the FHIR resource server a client connects to.
@@ -130,7 +131,7 @@ open class Server: FHIROpenServer, OAuth2RequestPerformer {
 	
 	open override func perform(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTask? {
 		logger?.debug("SMART", msg: "--->  \(request.httpMethod ?? "???") \(request.url?.description ?? "No URL")")
-		logger?.trace("SMART", msg: "REQUEST\n\(request.debugDescription)\n---")
+		logger?.trace("SMART", msg: "REQUEST\n\(request)\n---")
 		return super.perform(request: request) { data, response, error in
 			self.logger?.trace("SMART", msg: "RESPONSE\n\(response.debugDescription)\n---")
 			self.logger?.debug("SMART", msg: "<---  \((response as? HTTPURLResponse)?.statusCode ?? 999) (\(data?.count ?? 0) Byte)")

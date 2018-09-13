@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuth2
 
 
 extension Auth {

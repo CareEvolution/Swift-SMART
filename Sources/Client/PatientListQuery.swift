@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwiftFHIR
 
 /**
 A query that returns a list of patients.
@@ -33,13 +33,13 @@ open class PatientListQuery {
 		isDone = false
 	}
 	
-	func execute(onServer server: FHIRServer, order: PatientListOrder, callback: @escaping (Bundle?, FHIRError?) -> Void) {
+	func execute(onServer server: FHIRServer, order: PatientListOrder, callback: @escaping (SwiftFHIR.Bundle?, FHIRError?) -> Void) {
 		if isDone {
 			callback(nil, nil)
 			return
 		}
 		
-		let cb: (Bundle?, FHIRError?) -> Void = { bundle, error in
+		let cb: (SwiftFHIR.Bundle?, FHIRError?) -> Void = { bundle, error in
 			if nil != error || nil == bundle {
 				callback(nil, error)
 			}

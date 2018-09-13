@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftFHIR
+import OAuth2
 
 
 /**

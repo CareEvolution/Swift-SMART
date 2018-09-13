@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import SwiftFHIR
+import OAuth2
 
 public enum PatientListStatus: Int {
 	case unknown
