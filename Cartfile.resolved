@@ -1,3 +1,3 @@
-github "CareEvolution/OAuth2" "4d525ae6d867d7a24ccc9b084f81c796e3061e3f"
+github "CareEvolution/OAuth2" "5848ae6308c13f568d1235f9863faf2df6a32abd"
 github "CareEvolution/Swift-FHIR" "9c5238bea9c0e0978cb320b7c0e0f7ae08622b64"
-github "CareEvolution/SwiftKeychain" "f919d15f66ea94b2139298ff22e905131d2cd6c5"
+github "CareEvolution/SwiftKeychain" "f73b879db560b2e45ac53defac75c3c53e58e1a8"
