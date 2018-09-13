@@ -12,35 +12,13 @@
 		B8D2B969214ADBD300878C96 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D2B966214ADBD300878C96 /* Keychain.framework */; };
 		EE02F8121ACF30B000179969 /* PatientList+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02F8111ACF30B000179969 /* PatientList+iOS.swift */; };
 		EE02F8151ACF30E100179969 /* Auth+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02F8141ACF30E100179969 /* Auth+iOS.swift */; };
-		EE29E702195838DD008882C8 /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29E701195838DD008882C8 /* ServerTests.swift */; };
-		EE29E70419583A04008882C8 /* metadata in Resources */ = {isa = PBXBuildFile; fileRef = EE29E70319583A04008882C8 /* metadata */; };
-		EE43B1B419546D880017679A /* SMART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE43B1A919546D880017679A /* SMART.framework */; };
-		EE43B1BB19546D880017679A /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43B1BA19546D880017679A /* ClientTests.swift */; };
 		EE43B1C519546DB20017679A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43B1C219546DB20017679A /* Auth.swift */; };
 		EE43B1C619546DB20017679A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43B1C319546DB20017679A /* Client.swift */; };
 		EE43B1C719546DB20017679A /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43B1C419546DB20017679A /* Server.swift */; };
 		EE4D58FC1A826097005F5C7A /* PatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4D58FB1A826097005F5C7A /* PatientList.swift */; };
 		EEDDAC5C1A8921F500844B48 /* PatientListOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDAC5B1A8921F500844B48 /* PatientListOrder.swift */; };
 		EEDDAC621A89237900844B48 /* PatientListQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDAC611A89237900844B48 /* PatientListQuery.swift */; };
-		EEEE312B1BB2961C008866E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEE312A1BB2961C008866E2 /* UIKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EE27D4251965F40700752038 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE55C2611948906000849670 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE43B1A819546D880017679A;
-			remoteInfo = "SMART-on-FHIR-iOS";
-		};
-		EE43B1B519546D880017679A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE55C2611948906000849670 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE43B1A819546D880017679A;
-			remoteInfo = "SMART-on-FHIR-iOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B8D2B964214ADBD300878C96 /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
@@ -48,16 +26,10 @@
 		B8D2B966214ADBD300878C96 /* Keychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Keychain.framework; path = Carthage/Build/iOS/Keychain.framework; sourceTree = "<group>"; };
 		EE02F8111ACF30B000179969 /* PatientList+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientList+iOS.swift"; sourceTree = "<group>"; };
 		EE02F8141ACF30E100179969 /* Auth+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Auth+iOS.swift"; sourceTree = "<group>"; };
-		EE02F8171ACF30EA00179969 /* Auth+macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Auth+macOS.swift"; sourceTree = "<group>"; };
 		EE1391C01AC582D9002C7B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		EE13AAA11A5D47B200B901FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EE1F49B61C0672810095BF0F /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = SOURCE_ROOT; };
-		EE29E701195838DD008882C8 /* ServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTests.swift; sourceTree = "<group>"; };
-		EE29E70319583A04008882C8 /* metadata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metadata; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		EE43B1A919546D880017679A /* SMART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE43B1B319546D880017679A /* SwiftSMART-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftSMART-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE43B1B919546D880017679A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE43B1BA19546D880017679A /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
 		EE43B1C219546DB20017679A /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		EE43B1C319546DB20017679A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		EE43B1C419546DB20017679A /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -79,15 +51,6 @@
 				B8D2B967214ADBD300878C96 /* OAuth2.framework in Frameworks */,
 				B8D2B968214ADBD300878C96 /* SwiftFHIR.framework in Frameworks */,
 				B8D2B969214ADBD300878C96 /* Keychain.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE43B1B019546D880017679A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEEE312B1BB2961C008866E2 /* UIKit.framework in Frameworks */,
-				EE43B1B419546D880017679A /* SMART.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,15 +78,6 @@
 			path = Sources/iOS;
 			sourceTree = "<group>";
 		};
-		EE02F8161ACF30EA00179969 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				EE02F8171ACF30EA00179969 /* Auth+macOS.swift */,
-			);
-			name = macOS;
-			path = Sources/macOS;
-			sourceTree = "<group>";
-		};
 		EE43B1AA19546D880017679A /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,25 +90,6 @@
 			);
 			name = Client;
 			path = Sources/Client;
-			sourceTree = "<group>";
-		};
-		EE43B1B719546D880017679A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				EE43B1BA19546D880017679A /* ClientTests.swift */,
-				EE29E701195838DD008882C8 /* ServerTests.swift */,
-				EE29E70319583A04008882C8 /* metadata */,
-				EE43B1B819546D880017679A /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		EE43B1B819546D880017679A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EE43B1B919546D880017679A /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EE43B5C8195497A10017679A /* Frameworks */ = {
@@ -176,9 +111,7 @@
 				EE74D04B195C112300393DCA /* README.md */,
 				EE43B1AA19546D880017679A /* Client */,
 				EE02F8101ACF30B000179969 /* iOS */,
-				EE02F8161ACF30EA00179969 /* macOS */,
 				B8D2B963214AD3C700878C96 /* Supporting Files */,
-				EE43B1B719546D880017679A /* Tests */,
 				EE43B5C8195497A10017679A /* Frameworks */,
 				EE55C26A1948906000849670 /* Products */,
 			);
@@ -188,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				EE43B1A919546D880017679A /* SMART.framework */,
-				EE43B1B319546D880017679A /* SwiftSMART-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,25 +156,6 @@
 			productReference = EE43B1A919546D880017679A /* SMART.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EE43B1B219546D880017679A /* SwiftSMART-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE43B1BF19546D880017679A /* Build configuration list for PBXNativeTarget "SwiftSMART-iOSTests" */;
-			buildPhases = (
-				EE43B1AF19546D880017679A /* Sources */,
-				EE43B1B019546D880017679A /* Frameworks */,
-				EE43B1B119546D880017679A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE43B1B619546D880017679A /* PBXTargetDependency */,
-				EE27D4261965F40700752038 /* PBXTargetDependency */,
-			);
-			name = "SwiftSMART-iOSTests";
-			productName = "SMART-on-FHIR-iOSTests";
-			productReference = EE43B1B319546D880017679A /* SwiftSMART-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,11 +170,6 @@
 					EE43B1A819546D880017679A = {
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 1000;
-					};
-					EE43B1B219546D880017679A = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1000;
-						TestTargetID = EE43B1A819546D880017679A;
 					};
 				};
 			};
@@ -278,7 +186,6 @@
 			projectRoot = "";
 			targets = (
 				EE43B1A819546D880017679A /* SwiftSMART-iOS */,
-				EE43B1B219546D880017679A /* SwiftSMART-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,14 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE43B1B119546D880017679A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE29E70419583A04008882C8 /* metadata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,29 +216,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE43B1AF19546D880017679A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE29E702195838DD008882C8 /* ServerTests.swift in Sources */,
-				EE43B1BB19546D880017679A /* ClientTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EE27D4261965F40700752038 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE43B1A819546D880017679A /* SwiftSMART-iOS */;
-			targetProxy = EE27D4251965F40700752038 /* PBXContainerItemProxy */;
-		};
-		EE43B1B619546D880017679A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE43B1A819546D880017679A /* SwiftSMART-iOS */;
-			targetProxy = EE43B1B519546D880017679A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EE43B1BD19546D880017679A /* Debug */ = {
@@ -398,36 +275,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EE43B1C019546D880017679A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		EE43B1C119546D880017679A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -544,15 +391,6 @@
 			buildConfigurations = (
 				EE43B1BD19546D880017679A /* Debug */,
 				EE43B1BE19546D880017679A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE43B1BF19546D880017679A /* Build configuration list for PBXNativeTarget "SwiftSMART-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE43B1C019546D880017679A /* Debug */,
-				EE43B1C119546D880017679A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
