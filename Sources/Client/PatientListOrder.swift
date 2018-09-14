@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwiftFHIR
 
 /**
 An enum to define how a list of patients should be ordered.

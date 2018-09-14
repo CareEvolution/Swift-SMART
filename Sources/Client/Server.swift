@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftFHIR
+import OAuth2
 
 
 /**
@@ -126,7 +128,7 @@ open class Server: FHIROpenServer {
 	
 	open override func performPreparedRequest<R : FHIRServerRequestHandler>(_ request: URLRequest, withSession session: URLSession, handler: R, callback: @escaping ((_ response: FHIRServerResponse) -> Void)) {
 		logger?.debug("SMART", msg: "--->  \(request.httpMethod ?? "METHOD") \(request.url?.description ?? "No URL")")
-		logger?.trace("SMART", msg: "REQUEST\n\(request.debugDescription)\n---")
+		logger?.trace("SMART", msg: "REQUEST\n\(request)\n---")
 		super.performPreparedRequest(request as URLRequest, withSession: session, handler: handler) { response in
 			self.logger?.trace("SMART", msg: "RESPONSE\n\(response.debugDescription)\n---")
 			self.logger?.debug("SMART", msg: "<---  \(response.status) (\(response.body?.count ?? 0) Byte)")
@@ -250,7 +252,7 @@ open class Server: FHIROpenServer {
 					}
 					else if let patientId = parameters?["patient"] as? String {
 						Patient.read(patientId, server: self) { resource, error in
-							self.logger?.debug("SMART", msg: "Did read patient \(resource) with error \(error)")
+                            self.logger?.debug("SMART", msg: "Did read patient \(String(describing: resource)) with error \(String(describing: error))")
 							callback(resource as? Patient, error)
 						}
 					}

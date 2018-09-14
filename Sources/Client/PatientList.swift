@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftFHIR
+import OAuth2
 
 
 public enum PatientListStatus: Int {
@@ -50,7 +52,7 @@ public class PatientList {
 	}
 	
 	/// A block to be called when the `patients` property changes.
-	public var onPatientUpdate: ((Void) -> Void)?
+    public var onPatientUpdate: (() -> Void)?
 	
 	private(set) public var expectedNumberOfPatients: UInt = 0
 	
@@ -107,7 +109,7 @@ public class PatientList {
 			var lastTitle: Character = "$"
 			var lastSection = PatientListSection(title: "")
 			for patient in patients {
-				let pre: Character = patient.displayNameFamilyGiven.characters.first ?? "$"    // TODO: use another method depending on current ordering
+				let pre: Character = patient.displayNameFamilyGiven.first ?? "$"    // TODO: use another method depending on current ordering
 				if pre != lastTitle {
 					lastTitle = pre
 					lastSection = PatientListSection(title: String(lastTitle))

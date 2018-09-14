@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftFHIR
 
 
 /**
@@ -37,7 +38,7 @@ public class PatientListViewController: UITableViewController {
 		}
 	}
 	
-	lazy var activity = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+	lazy var activity = UIActivityIndicatorView(style: .gray)
 	
 	weak var headerLabel: UILabel?
 	
@@ -113,7 +114,7 @@ public class PatientListViewController: UITableViewController {
 		}
 	}
 	
-	public func dismissFromModal(_ sender: AnyObject?) {
+	@objc public func dismissFromModal(_ sender: AnyObject?) {
 		presentingViewController?.dismiss(animated: nil != sender)
 	}
 	
@@ -212,7 +213,7 @@ extension PatientList {
  */
 class PatientTableViewCell: UITableViewCell {
 	
-	override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
 	}
 
@@ -225,10 +226,10 @@ class PatientTableViewCell: UITableViewCell {
 		
 		// birthday and age
 		if let bdate = patient?.birthDate {
-			let attr = NSMutableAttributedString(string: "\(bdate.description)  (\(patient!.currentAge))", attributes: [NSForegroundColorAttributeName: UIColor.gray])
-			attr.setAttributes([
-					NSForegroundColorAttributeName: UIColor.black
-				], range: NSMakeRange(0, 4))
+			let attr = NSMutableAttributedString(string: "\(bdate.description)  (\(patient!.currentAge))", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.gray]))
+			attr.setAttributes(convertToOptionalNSAttributedStringKeyDictionary([
+					convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.black
+				]), range: NSMakeRange(0, 4))
 			detailTextLabel?.attributedText = attr
 		}
 		else {
@@ -249,3 +250,14 @@ class PatientTableViewCell: UITableViewCell {
 	}
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}

@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import OAuth2
+import SwiftFHIR
 
 /**
 Describes properties for the authorization flow.

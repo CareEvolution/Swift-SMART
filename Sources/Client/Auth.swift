@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import SwiftFHIR
+import OAuth2
 
 enum AuthType: String {
 	case none = "none"

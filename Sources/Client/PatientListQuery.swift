@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftFHIR
 
 
 /**
@@ -33,13 +34,13 @@ public class PatientListQuery {
 		isDone = false
 	}
 	
-	func execute(onServer server: FHIRServer, order: PatientListOrder, callback: @escaping (_ bundle: Bundle?, _ error: FHIRError?) -> Void) {
+	func execute(onServer server: FHIRServer, order: PatientListOrder, callback: @escaping (_ bundle: SwiftFHIR.Bundle?, _ error: FHIRError?) -> Void) {
 		if isDone {
 			callback(nil, nil)
 			return
 		}
 		
-		let cb: (_ bundle: Bundle?, _ error: FHIRError?) -> Void = { bundle, error in
+		let cb: (_ bundle: SwiftFHIR.Bundle?, _ error: FHIRError?) -> Void = { bundle, error in
 			if nil != error || nil == bundle {
 				callback(nil, error)
 			}
@@ -52,9 +53,9 @@ public class PatientListQuery {
 		// starting fresh, add sorting and page count URL parameters
 		if !isDone && !search.hasMore {
 			var sort = [(String, String)]()
-			let parts = order.rawValue.characters.split() { $0 == "," }.map() { String($0) }
+			let parts = order.rawValue.split() { $0 == "," }.map() { String($0) }
 			for part in parts {
-				let exp = part.characters.split() { $0 == ":" }.map() { String($0) }
+				let exp = part.split() { $0 == ":" }.map() { String($0) }
 				sort.append((exp[0], exp[1]))
 			}
 			search.sort = sort

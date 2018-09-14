@@ -1,0 +1,3 @@
+github "CareEvolution/Swift-FHIR" "ce-dstu2-swift42"
+github "CareEvolution/OAuth2" "ce-swift42"
+github "CareEvolution/SwiftKeychain" "ce-swift42"
